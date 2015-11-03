@@ -14,16 +14,14 @@ Router.route('/', {
   name: 'Home'
 });
 
-Router.route('/list', {
-  name: 'ListStuff'
+Router.route('/studentsparents', {
+  name: 'studentsparents'
 });
-
-Router.route('/add', {
-  name: 'AddStuff'
+Router.route('/facultystaff', {
+  name: 'facultystaff'
 });
-
-
-Router.route('/stuff/:_id', {
-  name: 'EditStuff',
-  data: function() { return Stuff.findOne(this.params._id); }
+Router.route('/alumni', {
+  name: 'alumni'
+});Router.route('/contact', {
+  name: 'contact'
 });
